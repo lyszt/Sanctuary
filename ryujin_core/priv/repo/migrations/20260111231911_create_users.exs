@@ -9,8 +9,6 @@ defmodule RyujinCore.Repo.Migrations.CreateUsers do
       add :email, :string
       add :session_key, :binary
       add :last_login, :utc_datetime
-      add :created_at, :utc_datetime, null: false
-      add :updated_at, :utc_datetime, null: false
 
       timestamps(type: :utc_datetime)
     end
